@@ -31,3 +31,25 @@ $ make
 $ make install
 {% endcodeblock %}
 Finally, the world is clear!
+***
+Next to install rmagick, when i execute following command: `yum install ImageMagick-devel ImageMagick-c++-devel`, my system alerts me with msg `Warning: Found a partial ImageMagick installation. Your operating system likely has some built-in ImageMagick libraries but not all of ImageMagick. This will most likely cause problems at both compile and runtime.` it seems that the the `ImageMagick` version was to old on RedHat 5.4, after searching the web, i found [Solve](https://github.com/hammackj/risu/issues/55), and commands as follows:
+{% codeblock lang:bash %}
+yum remove ImageMagick
+wget ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick.tar.gz
+tar -zxvf Imagemagick.tar.gz
+cd Imagemagick-6.7.6-8
+./configure; make; make install
+
+Then i got the problem magickwand.h not found or w.e. So i did
+PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ gem install rmagick
+{% endcodeblock %}
+things work fine now.
+* * *
+now i met another problem when i run `rake`, the system teld me `sqlite3_native.so: undefined symbol: sqlite3_initialize` 
+* * *
+i got a problem on how to open a port on Red Hat 5.4, finally i found the [solution](http://www.cyberciti.biz/faq/howto-rhel-linux-open-port-using-iptables/)
+{% codeblock lang:bash %}
+vi /etc/sysconfig/iptables
+...do sth. here
+/etc/init.d/iptables restart
+{% endcodeblock %}
