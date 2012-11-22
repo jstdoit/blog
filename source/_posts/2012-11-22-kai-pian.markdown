@@ -1,0 +1,27 @@
+---
+layout: post
+title: "开篇"
+date: 2012-11-22 02:17
+comments: true
+categories: [Others]
+---
+我之前一直想建自己的博客，然后写点什么教程、心得之类的东西，对后面查询有帮助也对展示自己有点用处。在尝试玩Wordpress多次后发现自己完全不能喜欢上那个玩意儿，功能太多太复杂，我个人用不了.所以每次挂上博客后都闲着，要么是vps过期了，要么是没什么意思把他给删了。直到看老赵的[windjs](http://windjs.org)博客的时候发现了ruby开发的这套博客系统，惊呆了，太尼玛适合码农使用了。
+<!-- more -->
+Octopress使用的是Markdown语法，之前听说过，但一直没用过，要说用过的话也就是github上面简单的写一下README文件。于是下了若干CheetSheet来看，结合者Octopress的文档，发现给代码加高亮的功能简直是太棒了——简洁而美观，甚合我意！
+
+{% codeblock JavaScript lang:js %}
+console.log("Hello, world!");
+{% endcodeblock %}
+
+{% codeblock Ruby lang:ruby %}
+puts "Hello, world!"
+{% endcodeblock %}
+
+{% codeblock Objective-C lang:objc %}
+NSLog(@"Hello, world!");
+{% endcodeblock %}
+
+{% codeblock C lang:c %}
+printf("Hello, world!");
+{% endcodeblock %}
+
