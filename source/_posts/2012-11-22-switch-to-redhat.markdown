@@ -8,6 +8,7 @@ categories: [Server]
 these days, my boss asked me to transfer all our application to a server backed by RedHat 5.4 from Ubuntu, what a mass!
 these is no `apt` tools anymore on the new server, i just cannot adapt my life to next days without `apt` tools. Whatever, i need to install these software:
 `git`, `nodejs`, `ruby`, `nginx with passenger` for rails' deploy...
+<!-- more -->
 
 * all things goes fine, but the rails gem, it alerts me with msg `It seems your ruby installation is missing psych (for YAML output). To eliminate this warning, please install libyaml and reinstall your ruby.`, ooooh! i never met such problem on Ubuntu... after search on Google, i found the solutions as follows:
 {% codeblock lang:bash%}
