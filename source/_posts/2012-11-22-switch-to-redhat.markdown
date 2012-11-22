@@ -13,6 +13,16 @@ these is no `apt` tools anymore on the new server, i just cannot adapt my life t
 * all things goes fine, but the rails gem, it alerts me with msg `It seems your ruby installation is missing psych (for YAML output). To eliminate this warning, please install libyaml and reinstall your ruby.`, ooooh! i never met such problem on Ubuntu...
 I found that `rvm` gives me an option for install `libyaml` by running `rvm pkg install libyaml`, then `rvm reinstall 1.9.3`, but warning still exists.
 :-( then I should abandon the RVM, and install ruby via src-code.
+* first install `libyaml`
+{% codeblock %}
+$ wget http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz
+$ tar xzvf yaml-0.1.4.tar.gz
+$ cd yaml-0.1.4
+$ ./configure --prefix=/usr/local
+$ make
+$ make install
+{% endcodeblock %}
+* then install `ruby`
 {% codeblock lang:bash%}
 $ wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p0.tar.gz
 $ tar xzvf ruby-1.9.3-p0.tar.gz
