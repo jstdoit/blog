@@ -9,8 +9,7 @@ these days, my boss asked me to transfer all our application to a server backed 
 these is no `apt` tools anymore on the new server, i just cannot adapt my life to next days without `apt` tools. Whatever, i need to install these software:
 `git`, `nodejs`, `ruby`, `nginx with passenger` for rails' deploy...
 <!-- more -->
-
-* all things goes fine, but the rails gem, it alerts me with msg `It seems your ruby installation is missing psych (for YAML output). To eliminate this warning, please install libyaml and reinstall your ruby.`, ooooh! i never met such problem on Ubuntu...
+* all things goes fine, but the when i run `gem`, it alerts me with msg `It seems your ruby installation is missing psych (for YAML output). To eliminate this warning, please install libyaml and reinstall your ruby.`, ooooh! i never met such problem on Ubuntu...
 I found that `rvm` gives me an option for install `libyaml` by running `rvm pkg install libyaml`, then `rvm reinstall 1.9.3`, but warning still exists.
 :-( then I should abandon the RVM, and install ruby via src-code.
 * first install `libyaml`
