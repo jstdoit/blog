@@ -45,8 +45,6 @@ PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ gem install rmagick
 {% endcodeblock %}
 things work fine now.
 * * *
-now i met another problem when i run `rake`, the system teld me `sqlite3_native.so: undefined symbol: sqlite3_initialize` 
-* * *
 * i got a problem on how to open a port on Red Hat 5.4, finally i found the [solution](http://www.cyberciti.biz/faq/howto-rhel-linux-open-port-using-iptables/)
 {% codeblock lang:bash %}
 vi /etc/sysconfig/iptables
