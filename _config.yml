@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
+url: http://blog.ganggang.me
 title: "{@jstdoit}"
 subtitle: "A blog for {@jstdoit}"
 author: "@jstdoit"
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email:just_send@163.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -60,7 +60,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 # Github repositories
 github_user: jstdoit
-github_repo_count: 2
+github_repo_count: 1
 github_show_profile_link: true
 github_skip_forks: true
 
