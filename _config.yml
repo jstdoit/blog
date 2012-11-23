@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:just_send@163.com
+email: just_send@163.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
