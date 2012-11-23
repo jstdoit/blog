@@ -47,9 +47,21 @@ things work fine now.
 * * *
 now i met another problem when i run `rake`, the system teld me `sqlite3_native.so: undefined symbol: sqlite3_initialize` 
 * * *
-i got a problem on how to open a port on Red Hat 5.4, finally i found the [solution](http://www.cyberciti.biz/faq/howto-rhel-linux-open-port-using-iptables/)
+* i got a problem on how to open a port on Red Hat 5.4, finally i found the [solution](http://www.cyberciti.biz/faq/howto-rhel-linux-open-port-using-iptables/)
 {% codeblock lang:bash %}
 vi /etc/sysconfig/iptables
 ...do sth. here
 /etc/init.d/iptables restart
 {% endcodeblock %}
+* * *
+* another problem, the version of vim installed on Redhat 5.4 is 7.0, but i want version 7.3, but the repo in system is only 7.0, so i have to compile vim from source.
+{% codeblock lang:bash %}
+wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
+tar jxf vim-7.3.tar.bz2 
+cd vim73
+./configure --enable-cscope --enable-multibyte --enable-xim --enable-fontset --with-features=huge
+make;make install
+ln -sf `which vim` /bin/vi
+{% endcodeblock %}
+Fine, the vim 7.3 is installed, and you will find the syntax highlight and other vim-features now work.
+
