@@ -62,3 +62,5 @@ make;make install
 ln -sf `which vim` /bin/vi
 {% endcodeblock %}
 Fine, the vim 7.3 is installed, and you will find the syntax highlight and other vim-features now work.
+* * *
+* tip: you can execute `bundle exec gem uninstall mysql2` to remove gem in local vendor.
