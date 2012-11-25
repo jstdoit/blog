@@ -135,6 +135,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 * here i capture some screenshots when i configure L2TP on my MAC.
 ![configure l2tp on MAC](/images/mac01.png "configure l2tp server info.")
 ![configure l2tp on MAC](/images/mac02.png "configure l2tp auth info.")
+* and I cound a [solution](http://www.lovessh.com/windows-xp-setup-l2tp-vpn/) on Windows xp to configure L2TP
 <br>
 Reference 
 [Configure L2TP/IPSec VPN on Ubuntu](http://blog.riobard.com/2010/04/30/l2tp-over-ipsec-ubuntu)
