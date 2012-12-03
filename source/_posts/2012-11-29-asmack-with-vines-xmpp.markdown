@@ -5,9 +5,9 @@ date: 2012-11-29 04:23
 comments: true
 categories: 
 ---
-http://stackoverflow.com/questions/11712671/smack-no-response-from-server-not-sure-why-am-i-getting-this-error
-I am keen to program with Ruby, so i used (Vines)[http://getvines.com] as my xmpp server, though it is not implemented entirely.
-When i use (asmack)[https://github.com/Flowdalic/asmack] client library to connect to Vines xmpp server, i got this exception:
+I am keen to program with Ruby, so i used [Vines](http://getvines.com) as my xmpp server, though it is not implemented entirely.
+When i use [asmack](https://github.com/Flowdalic/asmack) client library to connect to Vines xmpp server, i got this exception:
+<!-- more -->
 {% codeblock lang:bash %}
 11-30 09:36:46.518: W/System.err(2174): java.security.KeyStoreException: java.security.NoSuchAlgorithmException: KeyStore jks implementation not found
 11-30 09:36:46.518: W/System.err(2174):		at java.security.KeyStore.getInstance(KeyStore.java:119)
